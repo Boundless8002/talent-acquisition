@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+body {
+  width: 100%;
+  background-color: antiquewhite;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100%;
+  height: auto;
+  background-color: antiquewhite;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 100px;
+  border: 2px solid black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-sidebar {
+  width: 28%;
+  /* background-color: bisque; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.newform,
+.details {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  background-color: #ffff;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.details {
+  margin-top: 20px;
+}
+.newform,
+.details:hover {
+  position: relative;
+  border: 2px solid blue;
+}
+.exploredetails {
+  padding-top: 20px;
+}
+.right-sidebar {
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 800px;
+  background-color: #ffff;
+}
+.applicationTitle {
+  width: 100%;
+  background-color: rgb(142, 142, 243);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-section {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-section input {
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: center;
+  padding: 10px 400px 10px 10px;
+  margin: 10px 0 10px 0;
+}
+.footer {
+  background-color: #ccc;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px 20px 0;
+}
+.footer button {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(60, 60, 236);
   color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.app-container h1 {
+  display: flex;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+textarea {
+  cursor: pointer;
+  margin-left: 15px;
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Example color for focus state */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+select {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+select option {
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #007bff;
 }
